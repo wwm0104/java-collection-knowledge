@@ -6,8 +6,9 @@ import java.util.List;
 
 /**
  * ArrayList相关知识点
+ * trimToSize 调整ArrayList的空间
  */
-public class ArrayListTest {
+public class ArrayListTrimToSizeTest {
     public static void main(String[] args) {
         try {
             List<String> arrayList = new ArrayList<>(10);
