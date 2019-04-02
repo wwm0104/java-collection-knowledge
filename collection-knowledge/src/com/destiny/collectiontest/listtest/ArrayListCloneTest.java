@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * clone 方法
  * 该方法属于浅拷贝
+ * 如果list中放入的是对象，
+ * 那么对于对象的操作会影响到clone的对象
  */
 public class ArrayListCloneTest {
     public static void main(String[] args) {
