@@ -18,6 +18,12 @@ public class ArrayListCommonMethodTest {
         System.out.println("arrayList中该元素第一次出现的下标:"+arrayList.indexOf("aa"));
         System.out.println("-----------------------------------");
         System.out.println("arrayList中该元素最后次出现的下标:"+arrayList.lastIndexOf("aa"));
+        arrayList.add("aa");
+        System.out.println("-----------------------------------");
+        System.out.println("转换为数组:"+arrayList.toArray()[0]);
+        System.out.println("-----------------------------------");
+        String[] strings = arrayList.toArray(new String[2]);
+        System.out.println("转换为数组:"+strings[0]);
 
     }
 }
