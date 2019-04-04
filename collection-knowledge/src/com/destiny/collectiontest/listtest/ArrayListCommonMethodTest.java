@@ -24,6 +24,10 @@ public class ArrayListCommonMethodTest {
         System.out.println("-----------------------------------");
         String[] strings = arrayList.toArray(new String[2]);
         System.out.println("转换为数组:"+strings[0]);
-
+        System.out.println("-----------------------------------");
+        System.out.println("获取集合元素:"+arrayList.get(0));
+        System.out.println("-----------------------------------");
+        arrayList.set(0,"bb");
+        System.out.println("替换集合中的元素:"+arrayList.get(0));
     }
 }
