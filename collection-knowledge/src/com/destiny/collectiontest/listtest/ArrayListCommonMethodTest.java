@@ -5,6 +5,14 @@ import java.util.List;
 
 /**
  * ArrayList常用的方法
+ * 1.size()直接读取ArrayList中的变量值
+ * 2.isEmpty() 通过判断size == 0
+ * 3.contains()方法的实现还是依赖indexOf()方法
+ * 4.indexOf(),先判断是否null 是的话 for循环遍历数组，否的话 for遍历数组，然后比较equals是否相等
+ * 5.lastIndexOf 和indexOf的区别就是从后向前遍历
+ * 6.toArray 直接使用Arrays.copy方法复制出来一个数组
+ * 7.get 直接取数组中的值
+ * 8.set 把当前数组中的覆盖且返回原来的旧值
  */
 public class ArrayListCommonMethodTest {
     public static void main(String[] args) {
@@ -13,6 +21,7 @@ public class ArrayListCommonMethodTest {
         System.out.println("-----------------------------------");
         System.out.println("arrayList是否为空:"+arrayList.isEmpty());
         System.out.println("-----------------------------------");
+        //contains()方法的实现还是依赖indexOf()方法
         System.out.println("arrayList是否包含某个元素:"+arrayList.contains("aa"));
         System.out.println("-----------------------------------");
         System.out.println("arrayList中该元素第一次出现的下标:"+arrayList.indexOf("aa"));
